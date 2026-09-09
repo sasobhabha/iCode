@@ -162,3 +162,4 @@ CCSDKOSType CCSDKGetOSType(CCSDKRef sdk)
             return CCSDKOSTypeUnknown;
     }
 }
+
