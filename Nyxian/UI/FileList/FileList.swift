@@ -70,6 +70,21 @@ class FileListViewController: UIThemedTableViewController, UIDocumentPickerDeleg
         self.refreshControl?.addTarget(self, action: #selector(performRefresh), for: .valueChanged)
     }
     
+    /// Reload the visible listing after the vibecoding AI created/deleted files.
+    @objc func vibeMutationsHappened() {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self, self.viewIfLoaded?.window != nil else { return }
+            self.entries = FileListEntry.getEntries(ofPath: self.path)
+            self.tableView.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // re-registered here because the themed base class drops all observers on disappear
+        NotificationCenter.default.addObserver(self, selector: #selector(vibeMutationsHappened), name: VibeAgent.fileMutatedNotification, object: nil)
+    }
+    
     @objc func performRefresh() {
         if !self.isSublink, let project = self.project {
             if project.reload() {
@@ -290,6 +305,10 @@ class FileListViewController: UIThemedTableViewController, UIDocumentPickerDeleg
         // Project Roots Menu in case its the root of the project obviously
         if !self.isSublink, UIDevice.current.userInterfaceIdiom != .pad, let project = self.project {
             var projectMenuElements: [UIMenuElement] = []
+            projectMenuElements.append(UIAction(title: "Vibe", image: UIImage(systemName: "wand.and.stars"), handler: { [weak self] _ in
+                guard let self = self else { return }
+                VibeChatPresenter.present(from: self, project: project)
+            }))
             if !NXApplicationState.extensionLessMode {
                 projectMenuElements.append(UIAction(title: "Run", image: UIImage(systemName: "play.fill"), handler: { [weak self] _ in
                     guard let self = self else { return }
@@ -319,6 +338,14 @@ class FileListViewController: UIThemedTableViewController, UIDocumentPickerDeleg
             rootMenuChildren.append({
                 return UIMenu(title: "Project", options: [.displayAsPalette, .displayInline], children: projectMenuElements.reversed())
             }())
+            
+            /* dedicated vibecoding entry so it stays reachable even without a project menu */
+            rootMenuChildren.append(UIMenu(options: .displayInline, children: [
+                UIAction(title: "Vibe with AI", image: UIImage(systemName: "wand.and.stars"), handler: { [weak self] _ in
+                    guard let self = self, let project = self.project else { return }
+                    VibeChatPresenter.present(from: self, project: project)
+                })
+            ]))
         }
         
         if !self.isSublink {

@@ -11,3 +11,10 @@ Nyxian/LindChain/JBSupport/tshelper
 *.xcuserstate
 xcuserdata/
 Shared/kernel
+
+# Local API keys for the vibe feature — copy VibeSecrets.swift.example
+Nyxian/UI/Vibe/VibeSecrets.swift
+
+# Xcode noise
+*.xcresult
+DerivedData/

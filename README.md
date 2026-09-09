@@ -16,6 +16,25 @@ Nyxian is an iOS app that empowers developers with a full toolchain they can use
 ## Installation
 To start using Nyxian view the [Installation Guide](https://emexlabs.org/Nyxian/docs/installation/).
 
+## Vibecoding (AI assistant)
+This fork adds **Vibe**: a built-in AI pair-programmer that chats with you and edits your app project live on-device.
+
+- Chat UI with live streaming, a collapsible "thinking" panel, and tool-activity indicators
+- Tools: `list_project_files`, `read_file`, `edit_file`, `create_file`, `delete_path`, and `build_project` (compiles on-device and reports real compiler diagnostics; can relaunch the app)
+- Every file mutation goes through a reviewable diff card you approve or deny before it is written
+- Open editors live-reload and file lists refresh after each AI change
+- Provider chain with automatic failover: **Google Gemini → Groq → NVIDIA NIM** (any OpenAI-compatible server also works, including LM Studio/Ollama on your LAN)
+- Handles Gemini 3 `thought_signature` round-tripping automatically
+
+### Setting up API keys
+Keys are **not** stored in the repository. Copy the template and add your own:
+
+```bash
+cp Nyxian/UI/Vibe/VibeSecrets.swift.example Nyxian/UI/Vibe/VibeSecrets.swift
+```
+
+Then edit `VibeSecrets.swift` with your keys. The file is gitignored, so your keys never enter version history. You can also change provider, model and keys at runtime in the app: **Settings → Vibe**.
+
 ## Limitations
 The only current limitation is that we cannot intercept a arm64 supervisor call, but that is not so much of a problem, because remember we are on iOS, processes have nearly no priveleges, so by bypassing our shims and asking the iOS kernel directly wouldn't grant anything useful to the attacker, there may be tho a way to intercept a arm64 supervisor call, we think constantly in all directions. If there may be a register apple did not account for or a condition in which a arm64 supervisor call causes a debug exception. So we are already very focused on finding a possible soulution as that would also take weight from the guest process and make it's initialization speed faster, for the speed we have a other solution tho, a extension process poll where extensions wait on mach msg traps till they get the request, meaning they are entirely setup and ready to serve shrinking the initilization speed to effectively zero.
 

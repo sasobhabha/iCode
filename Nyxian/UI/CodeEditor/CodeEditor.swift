@@ -627,6 +627,7 @@ class CodeEditorViewController: UIViewController, NXDocumentDelegate {
         super.viewWillAppear(animated)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(vibeFileMutated(_:)), name: VibeAgent.fileMutatedNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(updateUndoRedoButtons), name: .NSUndoManagerDidUndoChange, object: textView.undoManager)
         NotificationCenter.default.addObserver(self, selector: #selector(updateUndoRedoButtons), name: .NSUndoManagerDidRedoChange, object: textView.undoManager)
@@ -648,6 +649,43 @@ class CodeEditorViewController: UIViewController, NXDocumentDelegate {
         self.languageServer?.releaseMemory()
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    ///
+    /// Live reload: the vibecoding AI just rewrote this file on disk, pull the
+    /// new content into the editor buffer so nothing stale gets saved over it.
+    ///
+    @objc private func vibeFileMutated(_ notification: Notification) {
+        guard let path = notification.object as? String,
+              path == self.file.fileURL.path else { return }
+        
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            
+            guard let newText = try? String(contentsOf: self.file.fileURL, encoding: .utf8),
+                  newText != self.textView.text else { return }
+            
+            self.textView.text = newText
+            self.document?.text = newText
+            self.coordinator?.textViewDidChange(self.textView)
+            
+            guard let rect = self.textView.rectForLine(1) else { return }
+            let flashLayer = CAShapeLayer()
+            flashLayer.path = UIBezierPath(roundedRect: rect.insetBy(dx: 2, dy: 1), cornerRadius: 3).cgPath
+            flashLayer.fillColor = UIColor.systemPurple.withAlphaComponent(0.0).cgColor
+            self.textView.layer.addSublayer(flashLayer)
+            
+            let pulse = CABasicAnimation(keyPath: "fillColor")
+            pulse.fromValue = UIColor.systemPurple.withAlphaComponent(0.35).cgColor
+            pulse.toValue = UIColor.systemPurple.withAlphaComponent(0.0).cgColor
+            pulse.duration = 0.9
+            pulse.timingFunction = CAMediaTimingFunction(name: .easeOut)
+            
+            CATransaction.begin()
+            CATransaction.setCompletionBlock { flashLayer.removeFromSuperlayer() }
+            flashLayer.add(pulse, forKey: "vibePulse")
+            CATransaction.commit()
+        }
     }
     
     @objc private func hardwareKeyboardDidConnect(_ notification: Notification) {
