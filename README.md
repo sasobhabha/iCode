@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><b>Nyxian</b></h1>
+  <h1><b>iCode</b></h1>
   <p><i>A full native IDE and a userspace microkernel for building and running iOS apps entirely on-device. offline, unjailbroken, iOS 18.4 through iOS 27 Beta 4</i></p>
 </div>
 <h6 align="center">
@@ -11,10 +11,10 @@
 </p>
 
 ## What is it?
-Nyxian is an iOS app that empowers developers with a full toolchain they can use while even being offline for iOS development on iPhone. It supports Swift, C, Objective-C, C++ and Objective-C++. It’s a powerful IDE that made the impossible possible, a fully on-device iOS IDE that doesn’t even need a cloud and can even be used with airplane mode enabled after it downloaded the SDK and resources from our server. It supports officially iOS 18.4 all the way up to the latest iOS version (iOS/iPadOS 27 Beta 4 tested). You can compile and run iOS apps on the go with ease, using the entire iOS 26.5 SDK.
+iCode is an iOS app that empowers developers with a full toolchain they can use while even being offline for iOS development on iPhone. It supports Swift, C, Objective-C, C++ and Objective-C++. It’s a powerful IDE that made the impossible possible, a fully on-device iOS IDE that doesn’t even need a cloud and can even be used with airplane mode enabled after it downloaded the SDK and resources from our server. It supports officially iOS 18.4 all the way up to the latest iOS version (iOS/iPadOS 27 Beta 4 tested). You can compile and run iOS apps on the go with ease, using the entire iOS 26.5 SDK.
 
 ## Installation
-To start using Nyxian view the [Installation Guide](https://emexlabs.org/Nyxian/docs/installation/).
+To start using iCode view the [Installation Guide](https://emexlabs.org/Nyxian/docs/installation/).
 
 ## Vibecoding (AI assistant)
 This fork adds **Vibe**: a built-in AI pair-programmer that chats with you and edits your app project live on-device.
@@ -30,7 +30,7 @@ This fork adds **Vibe**: a built-in AI pair-programmer that chats with you and e
 Keys are **not** stored in the repository. Copy the template and add your own:
 
 ```bash
-cp Nyxian/UI/Vibe/VibeSecrets.swift.example Nyxian/UI/Vibe/VibeSecrets.swift
+cp iCode/UI/Vibe/VibeSecrets.swift.example iCode/UI/Vibe/VibeSecrets.swift
 ```
 
 Then edit `VibeSecrets.swift` with your keys. The file is gitignored, so your keys never enter version history. You can also change provider, model and keys at runtime in the app: **Settings → Vibe**.
@@ -64,8 +64,8 @@ The only current limitation is that we cannot intercept a arm64 supervisor call,
     - [x] custom entitlement blob (translated from AppleCS to NXT2 aswell!)
     - kext link editor (kxld)
       - [x] validate code signature of kext
-      - [x] validate it's nyxian trust blob
-      - [x] load kext executable into nyxian address space
+      - [x] validate it's iCode trust blob
+      - [x] load kext executable into iCode address space
       - [x] find it's kmod
       - [x] apply fixups for kext
       - [x] fix ObjC
