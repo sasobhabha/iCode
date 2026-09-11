@@ -20,7 +20,7 @@
 */
 
 #include <LiveShim/shim.h>
-#include <Nyxian/LindChain/ProcEnvironment/Surface/extra/xnubits/proc_info.h>
+#include <iCode/LindChain/ProcEnvironment/Surface/extra/xnubits/proc_info.h>
 
 #if LIVESHIM_PROC_ENABLED
 

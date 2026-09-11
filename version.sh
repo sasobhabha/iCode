@@ -39,7 +39,7 @@ sed -i -e "/BUILD_NUMBER =/ s/= .*/= $new_build_number/" Config.xcconfig
 rm -f Config.xcconfig-e
 
 # Exporting all headers
-KERNEL_SOURCE_DIR="Nyxian"
+KERNEL_SOURCE_DIR="iCode"
 SHARED_KERNEL_DIR="Shared/kernel"
 rm -rf "$SHARED_KERNEL_DIR"
 mkdir -p "$SHARED_KERNEL_DIR"

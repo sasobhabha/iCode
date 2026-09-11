@@ -34,7 +34,7 @@
 #import <LindChain/ProcEnvironment/Surface/fs/preserver.h>
 #import <LindChain/ProcEnvironment/Surface/kxld/kxopen.h>
 #import <LindChain/ProcEnvironment/Surface/shimcache/ptrcache.h>
-#import <Nyxian-Swift.h>
+#import <iCode-Swift.h>
 
 @implementation PEUserspaceManager {
     os_unfair_lock _lock;

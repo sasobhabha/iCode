@@ -23,7 +23,7 @@
 #import <LindChain/IDEFoundation/NXCodeTemplate.h>
 #import <LindChain/IDEFoundation/NXUser.h>
 #import <LindChain/IDEFoundation/NXUtils.h>
-#import <Nyxian-Swift.h>
+#import <iCode-Swift.h>
 
 @implementation NXProjectConfig
 

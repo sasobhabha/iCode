@@ -22,7 +22,7 @@
 #import <LindChain/IDEFoundation/NXTarget.h>
 #import <LindChain/IDEFoundation/NXUser.h>
 #import <LindChain/IDEFoundation/NXBootstrap.h>
-#import <Nyxian-Swift.h>
+#import <iCode-Swift.h>
 
 @implementation NXTarget
 

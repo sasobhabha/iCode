@@ -23,7 +23,7 @@
 #import <LindChain/ProcEnvironment/PEProcessManager.h>
 #import <LindChain/Services/applicationmgmtd/LDEApplicationWorkspace.h>
 #import <LindChain/ProcEnvironment/Surface/tty/tty.h>
-#import <Nyxian-Swift.h>
+#import <iCode-Swift.h>
 
 @interface NXWindowSessionTerminal () <TerminalViewDelegateObjC>
 

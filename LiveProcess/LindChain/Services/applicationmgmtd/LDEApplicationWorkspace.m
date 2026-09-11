@@ -25,7 +25,7 @@
 #import <LindChain/ProcEnvironment/PEArchiveHandle.h>
 #import <LindChain/Utils/Zip.h>
 #import <os/lock.h>
-#if __has_include(<Nyxian-Swift.h>)
+#if __has_include(<iCode-Swift.h>)
 #define LIVEPROCESS 0
 #import <LindChain/ProcEnvironment/PELaunchServiceManager.h>
 #import <LindChain/ProcEnvironment/PEProcessManager.h>
@@ -34,7 +34,7 @@
 #include <ksurface_abi.h>
 #import <Frameworks/LiveShim/LiveShimSyscall.h>
 #define LIVEPROCESS 1
-#endif /* __has_include(<Nyxian-Swift.h>) */
+#endif /* __has_include(<iCode-Swift.h>) */
 
 @interface LDEApplicationWorkspace ()
 

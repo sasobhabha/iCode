@@ -170,7 +170,7 @@
 		79277DC02EE8752800F18B30 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		79277DC62EE8761000F18B30 /* version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
 		79281CBF2E3A44CA00E983C9 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
-		7944B5652DEC74EA00834134 /* Nyxian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nyxian.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7944B5652DEC74EA00834134 /* iCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7944B5672DEC74FC00834134 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		79AA11BC2F7FFE24002FEAF2 /* nxtool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nxtool; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AA11C32F7FFEE4002FEAF2 /* libarchive.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libarchive.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk/usr/lib/libarchive.tbd; sourceTree = DEVELOPER_DIR; };
@@ -189,7 +189,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		798BBD332F1D265200CBB23F /* Exceptions for "Nyxian" folder in "Nyxian" target */ = {
+		798BBD332F1D265200CBB23F /* Exceptions for "iCode" folder in "iCode" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				LindChain/ProcEnvironment/LiveContainer/LCBootstrap.m,
@@ -206,9 +206,9 @@
 				LindChain/ProcEnvironment/Shims/README.txt,
 				LindChain/ProcEnvironment/Shims/vfork.c,
 			);
-			target = AF9916D82DC8C42200DDF895 /* Nyxian */;
+			target = AF9916D82DC8C42200DDF895 /* iCode */;
 		};
-		79AA11C62F7FFF12002FEAF2 /* Exceptions for "Nyxian" folder in "nxtool" target */ = {
+		79AA11C62F7FFF12002FEAF2 /* Exceptions for "iCode" folder in "nxtool" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				LindChain/OpenSSL.xcframework,
@@ -233,15 +233,15 @@
 			);
 			target = 79BF97F62E6291EE00C60D4C /* LiveProcess */;
 		};
-		79BF98402E62931E00C60D4C /* Exceptions for "LiveProcess" folder in "Nyxian" target */ = {
+		79BF98402E62931E00C60D4C /* Exceptions for "LiveProcess" folder in "iCode" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				LindChain/Services/applicationmgmtd/LDEApplicationObject.m,
 				LindChain/Services/applicationmgmtd/LDEApplicationWorkspace.m,
 			);
-			target = AF9916D82DC8C42200DDF895 /* Nyxian */;
+			target = AF9916D82DC8C42200DDF895 /* iCode */;
 		};
-		79BF9A972E62BB6900C60D4C /* Exceptions for "Nyxian" folder in "LiveProcess" target */ = {
+		79BF9A972E62BB6900C60D4C /* Exceptions for "iCode" folder in "LiveProcess" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				LindChain/IDEConsole/Utils.c,
@@ -281,7 +281,7 @@
 			);
 			target = 79BF97F62E6291EE00C60D4C /* LiveProcess */;
 		};
-		8F412B0330488853004E63DF /* Exceptions for "Nyxian" folder in "LiveShim" target */ = {
+		8F412B0330488853004E63DF /* Exceptions for "iCode" folder in "LiveShim" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				LindChain/ProcEnvironment/Surface/trust/apple.c,
@@ -522,7 +522,7 @@
 				CoreCompiler/CoreCompilerSupportLibs/lib_CompilerSwiftSyntaxMacros.dylib,
 			);
 		};
-		AFF4DBDB2DCA5DEA00B1B5F9 /* Exceptions for "Nyxian" folder in "Embed Libraries" phase from "Nyxian" target */ = {
+		AFF4DBDB2DCA5DEA00B1B5F9 /* Exceptions for "iCode" folder in "Embed Libraries" phase from "iCode" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			attributesByRelativePath = {
 				LindChain/OpenSSL.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
@@ -538,7 +538,7 @@
 		798692F02E627A3B00390D7E /* LiveProcess */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				79BF98402E62931E00C60D4C /* Exceptions for "LiveProcess" folder in "Nyxian" target */,
+				79BF98402E62931E00C60D4C /* Exceptions for "LiveProcess" folder in "iCode" target */,
 				79BF983D2E62930600C60D4C /* Exceptions for "LiveProcess" folder in "LiveProcess" target */,
 			);
 			path = LiveProcess;
@@ -561,16 +561,16 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		AF9916DB2DC8C42200DDF895 /* Nyxian */ = {
+		AF9916DB2DC8C42200DDF895 /* iCode */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				798BBD332F1D265200CBB23F /* Exceptions for "Nyxian" folder in "Nyxian" target */,
-				AFF4DBDB2DCA5DEA00B1B5F9 /* Exceptions for "Nyxian" folder in "Embed Libraries" phase from "Nyxian" target */,
-				79BF9A972E62BB6900C60D4C /* Exceptions for "Nyxian" folder in "LiveProcess" target */,
-				8F412B0330488853004E63DF /* Exceptions for "Nyxian" folder in "LiveShim" target */,
-				79AA11C62F7FFF12002FEAF2 /* Exceptions for "Nyxian" folder in "nxtool" target */,
+				798BBD332F1D265200CBB23F /* Exceptions for "iCode" folder in "iCode" target */,
+				AFF4DBDB2DCA5DEA00B1B5F9 /* Exceptions for "iCode" folder in "Embed Libraries" phase from "iCode" target */,
+				79BF9A972E62BB6900C60D4C /* Exceptions for "iCode" folder in "LiveProcess" target */,
+				8F412B0330488853004E63DF /* Exceptions for "iCode" folder in "LiveShim" target */,
+				79AA11C62F7FFF12002FEAF2 /* Exceptions for "iCode" folder in "nxtool" target */,
 			);
-			path = Nyxian;
+			path = iCode;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -678,13 +678,13 @@
 				79277DC62EE8761000F18B30 /* version.sh */,
 				79277DC02EE8752800F18B30 /* Config.xcconfig */,
 				AF99171F2DC8EA3C00DDF895 /* Shared */,
-				AF9916DB2DC8C42200DDF895 /* Nyxian */,
+				AF9916DB2DC8C42200DDF895 /* iCode */,
 				798692F02E627A3B00390D7E /* LiveProcess */,
 				79AA11BD2F7FFE24002FEAF2 /* nxtool */,
 				8FB3C1EC303145D600DB3ABC /* Frameworks */,
 				7944B5662DEC74FC00834134 /* Frameworks */,
 				79BF97F72E6291EE00C60D4C /* LiveProcess.appex */,
-				7944B5652DEC74EA00834134 /* Nyxian.app */,
+				7944B5652DEC74EA00834134 /* iCode.app */,
 				79AA11BC2F7FFE24002FEAF2 /* nxtool */,
 				86DCC25A2FA5209600973169 /* CoreCompiler.framework */,
 				860D91752FAE1F95000D321B /* MobileDevelopmentKit.framework */,
@@ -845,9 +845,9 @@
 			productReference = 8FF32DED3036F59E00C46FE4 /* libHWHook.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		AF9916D82DC8C42200DDF895 /* Nyxian */ = {
+		AF9916D82DC8C42200DDF895 /* iCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF9916E72DC8C42400DDF895 /* Build configuration list for PBXNativeTarget "Nyxian" */;
+			buildConfigurationList = AF9916E72DC8C42400DDF895 /* Build configuration list for PBXNativeTarget "iCode" */;
 			buildPhases = (
 				AF9916D52DC8C42200DDF895 /* Sources */,
 				AF9916D62DC8C42200DDF895 /* Frameworks */,
@@ -865,9 +865,9 @@
 				8FD30F273044E7390059AE9A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				AF9916DB2DC8C42200DDF895 /* Nyxian */,
+				AF9916DB2DC8C42200DDF895 /* iCode */,
 			);
-			name = Nyxian;
+			name = iCode;
 			packageProductDependencies = (
 				AF9919572DC9175A00DDF895 /* TreeSitterObjc */,
 				AF99195A2DC9176900DDF895 /* TreeSitterC */,
@@ -889,7 +889,7 @@
 				8F60051F3033EB920028EDFD /* UIOnboarding */,
 			);
 			productName = LindDE;
-			productReference = 7944B5652DEC74EA00834134 /* Nyxian.app */;
+			productReference = 7944B5652DEC74EA00834134 /* iCode.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -927,7 +927,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AF9916D42DC8C42200DDF895 /* Build configuration list for PBXProject "Nyxian" */;
+			buildConfigurationList = AF9916D42DC8C42200DDF895 /* Build configuration list for PBXProject "iCode" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -951,7 +951,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF9916D82DC8C42200DDF895 /* Nyxian */,
+				AF9916D82DC8C42200DDF895 /* iCode */,
 				79BF97F62E6291EE00C60D4C /* LiveProcess */,
 				860D91742FAE1F95000D321B /* MobileDevelopmentKit */,
 				86DCC2592FA5209600973169 /* CoreCompiler */,
@@ -1107,7 +1107,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)",
-					Nyxian/,
+					iCode/,
 				);
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
@@ -1126,7 +1126,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)",
-					Nyxian/,
+					iCode/,
 				);
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
@@ -1150,7 +1150,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)",
-					Nyxian/,
+					iCode/,
 					LiveProcess/,
 				);
 				INFOPLIST_FILE = LiveProcess/Info.plist;
@@ -1170,7 +1170,7 @@
 					"-Wl,-U,_OBJC_CLASS_$_LSApplicationWorkspace",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(NYXIAN_LIVEPROCESS_PRODUCT_BUNDLE_IDENTIFIER)";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.sasobhabha.nyxian-vibe.LiveProcess";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = sasobhabha.icode.LiveProcess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1197,7 +1197,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)",
-					Nyxian/,
+					iCode/,
 					LiveProcess/,
 				);
 				INFOPLIST_FILE = LiveProcess/Info.plist;
@@ -1217,7 +1217,7 @@
 					"-Wl,-U,_OBJC_CLASS_$_LSApplicationWorkspace",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(NYXIAN_LIVEPROCESS_PRODUCT_BUNDLE_IDENTIFIER)";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.sasobhabha.nyxian-vibe.LiveProcess";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = sasobhabha.icode.LiveProcess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1256,7 +1256,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sasobhabha.nyxian-vibe.MobileDevelopmentKit";
+				PRODUCT_BUNDLE_IDENTIFIER = sasobhabha.icode.MobileDevelopmentKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -1299,7 +1299,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sasobhabha.nyxian-vibe.MobileDevelopmentKit";
+				PRODUCT_BUNDLE_IDENTIFIER = sasobhabha.icode.MobileDevelopmentKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -1346,7 +1346,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sasobhabha.nyxian-vibe.CoreCompiler";
+				PRODUCT_BUNDLE_IDENTIFIER = sasobhabha.icode.CoreCompiler;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -1400,7 +1400,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sasobhabha.nyxian-vibe.CoreCompiler";
+				PRODUCT_BUNDLE_IDENTIFIER = sasobhabha.icode.CoreCompiler;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -1448,7 +1448,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_CFLAGS = "-DCLIENT_ENV";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sasobhabha.nyxian-vibe.LiveShim";
+				PRODUCT_BUNDLE_IDENTIFIER = sasobhabha.icode.LiveShim;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -1485,7 +1485,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_CFLAGS = "-DCLIENT_ENV";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sasobhabha.nyxian-vibe.LiveShim";
+				PRODUCT_BUNDLE_IDENTIFIER = sasobhabha.icode.LiveShim;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -1671,14 +1671,14 @@
 				ENABLE_SECURITY_COMPILER_WARNINGS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Nyxian/LindChain",
-					"$(PROJECT_DIR)/Nyxian/LindChain/Private/Frameworks",
+					"$(PROJECT_DIR)/iCode/LindChain",
+					"$(PROJECT_DIR)/iCode/LindChain/Private/Frameworks",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)",
-					Nyxian/,
+					iCode/,
 					LiveProcess/,
 				);
 				INFOPLIST_FILE = Info.plist;
@@ -1747,15 +1747,15 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Nyxian",
-					"$(PROJECT_DIR)/Nyxian/LindChain/Synpush",
-					"$(PROJECT_DIR)/Nyxian/LindChain",
+					"$(PROJECT_DIR)/iCode",
+					"$(PROJECT_DIR)/iCode/LindChain/Synpush",
+					"$(PROJECT_DIR)/iCode/LindChain",
 				);
 				MARKETING_VERSION = "$(VERSION)";
 				OTHER_CFLAGS = "-DHOST_ENV";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(NYXIAN_PRODUCT_BUNDLE_IDENTIFIER)";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.sasobhabha.nyxian-vibe";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = sasobhabha.icode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1766,7 +1766,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = Nyxian/NXBridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = iCode/NXBridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1792,15 +1792,15 @@
 				ENABLE_SECURITY_COMPILER_WARNINGS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Nyxian/LindChain",
-					"$(PROJECT_DIR)/Nyxian/LindChain/Private/Frameworks",
+					"$(PROJECT_DIR)/iCode/LindChain",
+					"$(PROJECT_DIR)/iCode/LindChain/Private/Frameworks",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)",
-					Nyxian/,
+					iCode/,
 					LiveProcess/,
 				);
 				INFOPLIST_FILE = Info.plist;
@@ -1869,16 +1869,16 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Nyxian",
-					"$(PROJECT_DIR)/Nyxian/LindChain/Synpush",
-					"$(PROJECT_DIR)/Nyxian/LindChain",
+					"$(PROJECT_DIR)/iCode",
+					"$(PROJECT_DIR)/iCode/LindChain/Synpush",
+					"$(PROJECT_DIR)/iCode/LindChain",
 				);
 				MARKETING_VERSION = "$(VERSION)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DHOST_ENV";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(NYXIAN_PRODUCT_BUNDLE_IDENTIFIER)";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.sasobhabha.nyxian-vibe";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = sasobhabha.icode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1889,7 +1889,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = Nyxian/NXBridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = iCode/NXBridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
@@ -1953,7 +1953,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF9916D42DC8C42200DDF895 /* Build configuration list for PBXProject "Nyxian" */ = {
+		AF9916D42DC8C42200DDF895 /* Build configuration list for PBXProject "iCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF9916E52DC8C42400DDF895 /* Debug */,
@@ -1962,7 +1962,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF9916E72DC8C42400DDF895 /* Build configuration list for PBXNativeTarget "Nyxian" */ = {
+		AF9916E72DC8C42400DDF895 /* Build configuration list for PBXNativeTarget "iCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF9916E82DC8C42400DDF895 /* Debug */,

@@ -20,7 +20,7 @@
 */
 
 #import <LindChain/IDEConsole/NXConsoleView.h>
-#import <Nyxian-Swift.h>
+#import <iCode-Swift.h>
 
 static const CGFloat kAutoScrollThreshold = 20.0;
 

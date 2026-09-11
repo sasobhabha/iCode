@@ -41,8 +41,8 @@
 #import <ksurface_abi.h>
 
 static const char *gHostImageNeedles[] = {
-    "/Nyxian.app/PlugIns/LiveProcess.appex/LiveProcess",
-    "/Nyxian.app/PlugIns/LiveProcess.appex/Frameworks/LiveShim.framework/LiveShim",
+    "/iCode.app/PlugIns/LiveProcess.appex/LiveProcess",
+    "/iCode.app/PlugIns/LiveProcess.appex/Frameworks/LiveShim.framework/LiveShim",
     "/mntfs/bootfs/shimcache.dylib"
 };
 

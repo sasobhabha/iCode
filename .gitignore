@@ -5,15 +5,15 @@ build/
 *.deb
 *.tipa
 Payload/
-Nyxian/LindChain/JBSupport/libroot.a
-Nyxian/LindChain/JBSupport/libroot.h
-Nyxian/LindChain/JBSupport/tshelper
+iCode/LindChain/JBSupport/libroot.a
+iCode/LindChain/JBSupport/libroot.h
+iCode/LindChain/JBSupport/tshelper
 *.xcuserstate
 xcuserdata/
 Shared/kernel
 
 # Local API keys for the vibe feature — copy VibeSecrets.swift.example
-Nyxian/UI/Vibe/VibeSecrets.swift
+iCode/UI/Vibe/VibeSecrets.swift
 
 # Xcode noise
 *.xcresult

@@ -16,9 +16,9 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "AF9916D82DC8C42200DDF895"
-                     BuildableName = "Nyxian.app"
-                     BlueprintName = "Nyxian"
-                     ReferencedContainer = "container:Nyxian.xcodeproj">
+                     BuildableName = "iCode.app"
+                     BlueprintName = "iCode"
+                     ReferencedContainer = "container:iCode.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AF9916D82DC8C42200DDF895"
-               BuildableName = "Nyxian.app"
-               BlueprintName = "Nyxian"
-               ReferencedContainer = "container:Nyxian.xcodeproj">
+               BuildableName = "iCode.app"
+               BlueprintName = "iCode"
+               ReferencedContainer = "container:iCode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF9916D82DC8C42200DDF895"
-            BuildableName = "Nyxian.app"
-            BlueprintName = "Nyxian"
-            ReferencedContainer = "container:Nyxian.xcodeproj">
+            BuildableName = "iCode.app"
+            BlueprintName = "iCode"
+            ReferencedContainer = "container:iCode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF9916D82DC8C42200DDF895"
-            BuildableName = "Nyxian.app"
-            BlueprintName = "Nyxian"
-            ReferencedContainer = "container:Nyxian.xcodeproj">
+            BuildableName = "iCode.app"
+            BlueprintName = "iCode"
+            ReferencedContainer = "container:iCode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
