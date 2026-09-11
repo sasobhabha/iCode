@@ -75,7 +75,7 @@
         _executable = [self.dictionary objectForKey:@"NXExecutable" withDefaultObject:@"Unknown"];
         _displayName = [self.dictionary objectForKey:@"NXDisplayName" withDefaultObject:[self executable]];
         _organizationPrefix = [self.dictionary objectForKey:@"NXOrganizationPrefix" withDefaultObject:@"com.example"];
-        _bundleid = [self.dictionary objectForKey:@"NXBundleIdentifier" withDefaultObject:[NSString stringWithFormat:@"app.nyxian.%@.%@", [[NXUser shared] username], [self executable]]];
+        _bundleid = [self.dictionary objectForKey:@"NXBundleIdentifier" withDefaultObject:[NSString stringWithFormat:@"app.icode.%@.%@", [[NXUser shared] username], [self executable]]];
         _deploymentTarget = [self.dictionary objectForKey:@"NXDeploymentTarget" withDefaultObject:@"25.0"];
         _outputPath = [self.dictionary varObjectForKey:@"NXOutputPath"];
         _signMachOWithNyxianEntitlements = [self.dictionary booleanForKey:@"NXSignMachOWithNyxianEntitlements" withDefaultValue:true];

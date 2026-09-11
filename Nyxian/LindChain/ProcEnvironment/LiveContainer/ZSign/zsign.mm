@@ -367,7 +367,7 @@ static BOOL ProvisionContainsCertificate(NSData *prov,
     
     if(errorOut)
     {
-        *errorOut = @"The provisioning profile Nyxian was signed with does not include this certificate, make sure you use the same certificate Nyxian was signed with.";
+        *errorOut = @"The provisioning profile iCode was signed with does not include this certificate, make sure you use the same certificate iCode was signed with.";
     }
     
     return NO;

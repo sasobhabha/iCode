@@ -402,7 +402,7 @@ class ProjectConfigViewController: UIThemedTableViewController {
                             self.markDirty()
                         }
                     case .bundleIdentifier:
-                        presentTextAlert(title: "Bundle Identifier", current: pendingBundleIdentifier, placeholder: "com.nyxian.example") {
+                        presentTextAlert(title: "Bundle Identifier", current: pendingBundleIdentifier, placeholder: "com.icode.example") {
                             self.pendingBundleIdentifier = $0;
                             self.markDirty()
                         }

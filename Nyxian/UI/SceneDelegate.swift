@@ -85,7 +85,7 @@ The required NSExtension could not be found.
 
 Make sure the app was installed with its extension intact and that it wasn't removed during signing or installation.
 
-App is now in extension-less mode, meaning apps cannot run within Nyxian until the problem has been resolved.
+App is now in extension-less mode, meaning apps cannot run within iCode until the problem has been resolved.
 """)
         }
         completionHandler(false)
@@ -101,7 +101,7 @@ Distribution certificates are not supported. You must use a Developer certificat
 
 The 7 day certificate is a Developer certificate.
 
-App is now in extension-less mode, meaning apps cannot run within Nyxian until the problem has been resolved.
+App is now in extension-less mode, meaning apps cannot run within iCode until the problem has been resolved.
 """)
         }
         completionHandler(false)
@@ -125,7 +125,7 @@ App is now in extension-less mode, meaning apps cannot run within Nyxian until t
                 message: {
                     switch status {
                     default:
-                        return "Nyxian needs a signing certificate to install and launch the apps you build. Without one you can still write and compile code, but you won't be able to run it on this device."
+                        return "iCode needs a signing certificate to install and launch the apps you build. Without one you can still write and compile code, but you won't be able to run it on this device."
                     }
                 }(), preferredStyle: .alert)
             
@@ -168,7 +168,7 @@ struct UIOnboardingHelper {
     }
     
     static func setUpSecondTitleLine() -> NSMutableAttributedString {
-        .init(string: Bundle.main.displayName ?? "Nyxian", attributes: [
+        .init(string: Bundle.main.displayName ?? "iCode", attributes: [
             .foregroundColor: UIColor { trait in trait.userInterfaceStyle == .dark ? UIColor(red: 0.85, green: 0.74, blue: 0.93, alpha: 1.0) : UIColor(red: 0.62, green: 0.48, blue: 0.78, alpha: 1.0) }
         ])
     }
@@ -190,7 +190,7 @@ struct UIOnboardingHelper {
             .init(icon: UIImage(systemName: "exclamationmark.triangle.fill")!,
                 iconTint: UIColor { trait in trait.userInterfaceStyle == .dark ? UIColor(red: 0.98, green: 0.82, blue: 0.45, alpha: 1.0) : UIColor(red: 0.85, green: 0.60, blue: 0.12, alpha: 1.0) },
                 title: "Warning",
-                description: "This is a beta version of Nyxian, so don't expect a product without bugs, please be kind and respectful, it is very hard to develop this kind of software. Please report any kinds of issues and ask any question over at our github we have a lot of time and passion answering your questions and making Nyxian better."),
+                description: "This is a beta version of iCode, so don't expect a product without bugs, please be kind and respectful, it is very hard to develop this kind of software. Please report any kinds of issues and ask any question over at our github we have a lot of time and passion answering your questions and making iCode better."),
         ])
     }
     

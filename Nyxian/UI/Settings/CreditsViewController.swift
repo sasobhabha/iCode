@@ -113,7 +113,7 @@ class CreditsViewController: UIThemedTableViewController {
             credits: [
                 Credit(
                     name: "ayame09",
-                    role: "Original Nyxian app icons",
+                    role: "Original iCode app icons",
                     ghuser: "ayayame09"
                 ),
                 Credit(
